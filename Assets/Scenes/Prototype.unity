@@ -119,6 +119,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &143365808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 143365810}
+  - component: {fileID: 143365809}
+  m_Layer: 0
+  m_Name: Visibility Tester
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &143365809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143365808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bead4998445e400eb4b59b60a727481, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VisibilityTester
+  gameManagerScript: {fileID: 689847114}
+  uiManagerScript: {fileID: 276383781}
+--- !u!4 &143365810
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143365808}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,6 +345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99f27d65385ca44c1acbb6eba61fea0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
+  uiDocument: {fileID: 0}
 --- !u!4 &276383782
 Transform:
   m_ObjectHideFlags: 0
@@ -579,6 +626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63df4bff8d38a44178765d2c2ec3248e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnManager
+  obstaclePrefab: {fileID: 0}
 --- !u!114 &689847114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -591,6 +639,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 972ca3aea68d34f16b4dc9edcda8165e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  speed: 0
+  gameOver: 0
 --- !u!4 &689847115
 Transform:
   m_ObjectHideFlags: 0
@@ -692,6 +742,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2794debba7e0e43119771aa57c4cb2c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  jumpForce: 0
+  gravityModifier: 0
+  explosionParticle: {fileID: 0}
+  dirtParticle: {fileID: 0}
+  jumpSound: {fileID: 0}
+  crashSound: {fileID: 0}
 --- !u!65 &767102146
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1206,3 +1262,4 @@ SceneRoots:
   - {fileID: 794257468}
   - {fileID: 689847115}
   - {fileID: 276383782}
+  - {fileID: 143365810}
