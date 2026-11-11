@@ -3,15 +3,20 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
-    public float speed;
+    public int speed;
     public bool gameOver;
-    public bool startGame { get; set; }
+    public bool startGame {get; set;}
 
-    void Start()
-    {
-    }
 
-    void Update()
+    void Awake()
     {
+        if(Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }
