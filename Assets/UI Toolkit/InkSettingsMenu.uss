@@ -1,0 +1,129 @@
+.screen-overlay {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(15, 14, 13, 0.75);
+}
+
+.ink-panel {
+    width: 480px;
+    padding: 36px 42px;
+    background-color: #F4EFE6; /* Warm Rice Paper / Parchment */
+    border-color: #161513;
+    /* Irregular border widths mimic hand-drawn ink strokes */
+    border-top-width: 4px;
+    border-bottom-width: 6px;
+    border-left-width: 3px;
+    border-right-width: 5px;
+    border-radius: 3px;
+}
+
+.header-container {
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.ink-title {
+    font-size: 32px;
+    color: #161513;
+    -unity-font-style: bold;
+    letter-spacing: 6px;
+    margin-bottom: 10px;
+}
+
+.ink-divider {
+    width: 85%;
+    height: 4px;
+    background-color: #161513;
+    border-radius: 2px;
+}
+
+.controls-container {
+    margin-bottom: 32px;
+}
+
+.setting-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(22, 21, 19, 0.2);
+}
+
+.ink-label {
+    font-size: 16px;
+    color: #161513;
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+}
+
+/* Slider Styling */
+.ink-slider {
+    width: 190px;
+}
+
+.ink-slider #unity-tracker {
+    height: 4px;
+    background-color: #161513;
+    border-radius: 1px;
+}
+
+.ink-slider #unity-dragger {
+    width: 14px;
+    height: 20px;
+    margin-top: -8px;
+    background-color: #161513;
+    border-color: #F4EFE6;
+    border-width: 2px;
+    border-radius: 2px;
+}
+
+/* Toggle Styling */
+.ink-toggle #unity-checkmark {
+    width: 22px;
+    height: 22px;
+    background-color: #EAE2D3;
+    border-color: #161513;
+    border-width: 2px;
+    border-radius: 2px;
+}
+
+/* Button Styling */
+.footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ink-button {
+    width: 47%;
+    height: 44px;
+    font-size: 14px;
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    border-width: 3px;
+    border-color: #161513;
+    border-radius: 2px;
+    transition-duration: 0.15s;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: #161513;
+}
+
+.secondary-btn:hover {
+    background-color: rgba(22, 21, 19, 0.12);
+}
+
+/* Vermilion Hanko Stamp Style for Apply */
+.primary-btn {
+    background-color: #B8332A;
+    border-color: #8A1F18;
+    color: #F4EFE6;
+}
+
+.primary-btn:hover {
+    background-color: #9E271F;
+}
