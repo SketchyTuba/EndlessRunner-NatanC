@@ -1,45 +1,20 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="InkSettingsMenu.uss" />
-    <ui:VisualElement name="ScreenOverlay" class="screen-overlay">
-        <ui:VisualElement name="InkScrollPanel" class="ink-panel">
-            
-            <!-- Header with Ink Brush Divider -->
-            <ui:VisualElement name="HeaderContainer" class="header-container">
-                <ui:Label text="SETTINGS" name="TitleLabel" class="ink-title" />
-                <ui:VisualElement name="InkBrushDivider" class="ink-divider" />
-            </ui:VisualElement>
-
-            <!-- Settings Controls -->
-            <ui:VisualElement name="ControlsContainer" class="controls-container">
-                
-                <ui:VisualElement class="setting-row">
-                    <ui:Label text="Master Ink Volume" class="ink-label" />
-                    <ui:Slider name="MasterVolumeSlider" low-value="0" high-value="100" value="80" class="ink-slider" />
-                </ui:VisualElement>
-
-                <ui:VisualElement class="setting-row">
-                    <ui:Label text="Brushstroke SFX" class="ink-label" />
-                    <ui:Slider name="SfxVolumeSlider" low-value="0" high-value="100" value="85" class="ink-slider" />
-                </ui:VisualElement>
-
-                <ui:VisualElement class="setting-row">
-                    <ui:Label text="Calligraphy Subtitles" class="ink-label" />
-                    <ui:Toggle name="SubtitlesToggle" value="true" class="ink-toggle" />
-                </ui:VisualElement>
-
-                <ui:VisualElement class="setting-row">
-                    <ui:Label text="Parchment Grain" class="ink-label" />
-                    <ui:Toggle name="ScreenGrainToggle" value="true" class="ink-toggle" />
-                </ui:VisualElement>
-
-            </ui:VisualElement>
-
-            <!-- Footer Action Buttons -->
-            <ui:VisualElement name="FooterContainer" class="footer-container">
-                <ui:Button text="RESET" name="ResetButton" class="ink-button secondary-btn" />
-                <ui:Button text="SEAL &amp; APPLY" name="ApplyButton" class="ink-button primary-btn" />
-            </ui:VisualElement>
-
+    <Style src="MainUIDocument.uss" />
+    <ui:VisualElement name="RootContainer" class="root-container">
+        
+        <!-- Top HUD Bar -->
+        <ui:VisualElement name="TopHeader" class="top-header">
+            <ui:Label name="scoreLabel" text="Score: 0" class="hud-label" />
+            <ui:Label name="timeLabel" text="Time Remaining: 0" class="hud-label" />
         </ui:VisualElement>
+
+        <!-- Center Start Menu -->
+        <ui:VisualElement name="CenterMenu" class="center-menu">
+            <ui:VisualElement name="InkMenuCard" class="ink-card">
+                <ui:RadioButtonGroup name="timerRadio" choices="Infinite Game,One Minute Game" value="0" class="ink-radio-group" />
+                <ui:Button name="startButton" text="Start" class="ink-start-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
     </ui:VisualElement>
 </ui:UXML>

@@ -1,0 +1,104 @@
+.root-container {
+    flex-grow: 1;
+    background-color: transparent;
+}
+
+/* Top HUD Row */
+.top-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 36px;
+    background-color: transparent;
+}
+
+.hud-label {
+    font-size: 24px;
+    color: #F4EFE6; /* Warm Parchment White for contrast over gameplay */
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    -unity-text-outline-width: 1px;
+    -unity-text-outline-color: #161513;
+    text-shadow: 2px 2px 0px #161513;
+}
+
+/* Center Menu Area */
+.center-menu {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+/* Parchment Scroll Card */
+.ink-card {
+    padding: 32px 40px;
+    align-items: center;
+    background-color: #F4EFE6;
+    border-color: #161513;
+    border-top-width: 4px;
+    border-bottom-width: 6px;
+    border-left-width: 3px;
+    border-right-width: 5px;
+    border-radius: 3px;
+}
+
+/* RadioButtonGroup Styling */
+.ink-radio-group {
+    margin-bottom: 24px;
+}
+
+.ink-radio-group .unity-radio-button {
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.ink-radio-group .unity-radio-button__label {
+    font-size: 18px;
+    color: #161513;
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+    margin-left: 8px;
+}
+
+.ink-radio-group .unity-radio-button__checkmark-background {
+    width: 20px;
+    height: 20px;
+    background-color: #EAE2D3;
+    border-color: #161513;
+    border-width: 2px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ink-radio-group .unity-radio-button__checkmark {
+    width: 10px;
+    height: 10px;
+    background-color: #161513;
+    border-radius: 5px;
+}
+
+/* Vermilion Stamp Start Button */
+.ink-start-button {
+    width: 220px;
+    height: 48px;
+    font-size: 18px;
+    -unity-font-style: bold;
+    letter-spacing: 3px;
+    color: #F4EFE6;
+    background-color: #B8332A;
+    border-color: #8A1F18;
+    border-width: 3px;
+    border-radius: 2px;
+    transition-duration: 0.15s;
+}
+
+.ink-start-button:hover {
+    background-color: #9E271F;
+    border-color: #161513;
+}
+
+.ink-start-button:active {
+    background-color: #7D1C16;
+}
